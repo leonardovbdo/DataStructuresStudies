@@ -80,31 +80,27 @@ public class TheArrays {
         */
 
         System.out.println("\nEstrutura de repetição percorrendo todos os vetores de 'colors': \n");
-
         for (int i = 0; i < colors.length; i++) {
             System.out.println(colors[i]);
         }
 
-        System.out.println("\nEstrutura de repetição percorrendo todos os vetores de 'colors' de maneira reversa: \n");
         // Forma reversa de implementar a estrutura de repetição (do último até o primeiro)
+        System.out.println("\nEstrutura de repetição percorrendo todos os vetores de 'colors' de maneira reversa: \n");
         for (int i = colors.length - 1; i >= 0; i--) {
             System.out.println(colors[i]);
         }
 
+        // Impressão do tamanho do array 'colors' através do método 'length'
         System.out.println("\nTamanho do Array 'colors': " + colors.length);
 
-       /*
-        * Mais uma maneira de imprimir todos os valores do array através de uma estrutura de repetição 'ForEach'
-        */
+        // Mais uma maneira de imprimir todos os valores do array através de uma estrutura de repetição 'ForEach'
         System.out.println("\nEstrutura de repetição percorrendo todos os vetores de 'colors' usando 'ForEach'");
         for (String color : colors) {
             System.out.println(color);
         }
 
-        /*
-         * Método da classe 'Arrays' que tem como função percorrer os vetores de um array
-         */
-        System.out.println("\nMétodo 'stream' da classe 'Arrays' percorrendo todos os vetores de 'colors':");
+        // Método da classe 'Arrays' que tem como função percorrer os vetores de um array
+        System.out.println("\nMétodo 'stream' e 'forEach' da classe 'Arrays' percorrendo todos os vetores de 'colors':");
         Arrays.stream(colors).forEach(System.out::println);
     }
 }
